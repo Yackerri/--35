@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Скрипт четных элементов</title>
+</head>
+<body>
+  <script>
+    var numbers = []; // Пустой массив для хранения случайных значений
+
+    for (var i = 0; i < 7; i++) {
+      var randomNumber = Math.floor(Math.random() * 100); // Генерация случайного числа от 0 до 99
+      numbers.push(randomNumber); // Добавление сгенерированного числа в массив
+    }
+
+    document.write("Массив: " + numbers + "<br>");
+
+    var evenNumbers = []; // Пустой массив для хранения четных элементов
+
+    for (var j = 0; j < numbers.length; j++) {
+      if (numbers[j] % 2 === 0) {
+        evenNumbers.push(numbers[j]); // Добавление четного элемента в массив
+      }
+    }
+
+    document.write("Четные элементы: " + evenNumbers);
+  </script>
+</body>
+</html>

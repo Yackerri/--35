@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Пример скрипта с выводом на страницу</title>
+</head>
+<body>
+  <p id="output"></p>
+
+  <script>
+    var n = 1; // Исходное значение n
+    var outputElement = document.getElementById("output");
+
+    for (var i = 0; i < n + 5; i++) {
+      var surname = "Белко";
+      var firstName = "Тома";
+      var fullName = surname + " " + firstName;
+
+      var paragraph = document.createElement("p");
+      var text = document.createTextNode(fullName);
+      paragraph.appendChild(text);
+      outputElement.appendChild(paragraph);
+    }
+  </script>
+</body>
+</html>

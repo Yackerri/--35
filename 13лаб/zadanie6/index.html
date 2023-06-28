@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Отображение URL-адреса страницы</title>
+</head>
+<body>
+  <h1>Отображение URL-адреса страницы</h1>
+
+  <script>
+    // Функция для отображения URL-адреса в диалоговом окне
+    function displayURL() {
+      var currentURL = window.location.href; // Получение текущего URL-адреса
+      alert("Текущий URL-адрес: " + currentURL); // Отображение URL-адреса в диалоговом окне
+    }
+
+    // Вызов функции displayURL каждые 4 секунды
+    setInterval(displayURL, 4000);
+  </script>
+</body>
+</html>

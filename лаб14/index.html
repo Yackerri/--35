@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BAGET</title>
+</head>
+<body>
+    <h1>Шингаркин Александр Вадимовч</h1>
+    <p id="birthPlace">г. Гродно</p>
+    <img src="img.png" alt="Описание изображения" width="300px">
+    <button onclick="showDoctype()">Doctype</button>
+
+    <script>
+        function showDoctype() {
+            var doctypeInfo = document.doctype;
+            alert("Doctype: " + doctypeInfo.name);
+            setTimeout(function() {
+                alert("Doctype: " + doctypeInfo.name);
+                applyStyles();
+                setInterval(showCurrentURL, 10000);
+            }, 5000);
+        }
+
+        function applyStyles() {
+            var birthPlaceElement = document.getElementById("birthPlace");
+            birthPlaceElement.style.color = "blue";
+            birthPlaceElement.style.backgroundColor = "white";
+            birthPlaceElement.style.fontFamily = "Verdana";
+            birthPlaceElement.style.fontSize = "10px";
+            birthPlaceElement.style.border = "1px solid orange";
+            birthPlaceElement.style.display = "inline";
+        }
+
+        function showCurrentURL() {
+            var currentURL = window.location.href;
+            alert("Current URL: " + currentURL);
+        }
+
+        document.getElementsByTagName("img")[0].addEventListener("click", function() {
+            this.parentNode.removeChild(this);
+        });
+    </script>
+</body>
+</html>

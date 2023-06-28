@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Пример вывода времени</title>
+  <script>
+    function showTime() {
+      var now = new Date();
+      var hours = now.getHours().toString().padStart(2, '0');
+      var minutes = now.getMinutes().toString().padStart(2, '0');
+      var timeString = hours + ':' + minutes;
+      alert('Текущее время: ' + timeString);
+    }
+  </script>
+</head>
+<body>
+  <button onclick="showTime()">Показать время</button>
+  <script>
+    var count = 0;
+    while (count < 33) {
+      document.write("Группа ПЗТ<br>");
+      count++;
+    }
+  </script>
+ 
+ <script>
+  
+  var arr = [2, -4, 6, -8, 10]; // Формирование массива из 5 целых элементов
+
+  var product = 1;
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      product *= arr[i];
+    }
+  }
+  document.write("<p>Произведение положительных элементов массива: </p>" + product);
+</script>
+
+<script src="script2.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

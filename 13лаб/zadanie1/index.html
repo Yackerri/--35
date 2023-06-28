@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Время</title>
+  <script>
+    function showCurrentTime() {
+      var currentTime = new Date();
+      var hours = currentTime.getHours();
+      var minutes = currentTime.getMinutes();
+      var seconds = currentTime.getSeconds();
+
+      var timeString = hours + ':' + minutes + ':' + seconds;
+      alert('Текущее время: ' + timeString);
+    }
+  </script>
+</head>
+<body>
+  <button onclick="showCurrentTime()">Показать текущее время</button>
+</body>
+</html>

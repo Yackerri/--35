@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Работа со строками</title>
+</head>
+<body>
+  <h1>Работа со строками</h1>
+
+  <script>
+    var S1 = "Белко";
+    var S2 = "Schweden, Stockholm, Farsta Centrum";
+
+    var S2Length = S2.length; // Длина строки S2
+
+    var reversedS1 = S1.split('').reverse().join(''); // Строка S1 в обратном порядке
+
+    var lowerS2 = S2.toLowerCase(); // Строка S2 в нижнем регистре
+
+    document.write("Длина S2: " + S2Length + "<br>");
+    document.write("S1 в обратном порядке: " + reversedS1 + "<br>");
+    document.write("S2 в нижнем регистре: " + lowerS2 + "<br>");
+  </script>
+</body>
+</html>
